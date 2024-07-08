@@ -1,0 +1,19 @@
+
+New Page
+1. Administrator page
+
+
+In the main Page
+1. Testimonials Section: Include testimonials or reviews from satisfied customers to build trust and credibility.
+2. Pricing Plans: Display different pricing packages or options for your services.
+3. FAQ Section: Answer common questions that potential customers may have about your services.
+4. Contact Form: Allow visitors to easily get in touch with you by adding a contact form.
+5. Portfolio or Gallery: Showcase examples of your work or previous projects to demonstrate your expertise.
+6. Blog or News Section: Share industry insights, tips, or company updates to engage visitors and establish authority in your field.
+7. Social Media Integration: Add links to your social media profiles or include social media feeds to connect with your audience and     increase visibility.
+8. Special Offers or Promotions: Highlight any special offers, discounts, or promotions to encourage visitors to take action.
+9. Interactive Elements: Incorporate interactive elements such as sliders, animations, or interactive maps to make your website more engaging.
+10. Mobile Responsiveness: Ensure that your website is optimized for mobile devices to provide a seamless browsing experience for users on smartphones and tablets.
+
+Main page
+Adding carousel in my page

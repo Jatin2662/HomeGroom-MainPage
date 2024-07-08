@@ -1,0 +1,227 @@
+.Anb {
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 4vh;
+    left: -20vw;
+    border-radius: 7px;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5);
+    transition: left 0.3s ease;
+    animation: changeBackground 7s infinite;
+    padding-top: 2vh;
+}
+
+@keyframes changeBackground {
+    0% {
+        background-color: white;
+    }
+
+    50% {
+        background-color: rgb(222, 222, 222);
+    }
+
+    100% {
+        background-color: white;
+    }
+}
+
+.Anb.open {
+    left: 0;
+}
+
+.together {
+    width: 100%;
+    /* background-color : white; */
+    /* height : 100%; it was looking good do it if necessary*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.panel {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.photoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3vh;
+    margin: 5px;
+}
+
+.photo {
+    border-radius: 50%;
+    height: 10vw;
+    width: 10vw;
+}
+
+.separate1,
+.separate2 {
+    height: 1px;
+    width: 90%;
+    margin: auto;
+    background-color: black;
+}
+
+.userDetails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    gap: 3px;
+}
+
+.menu-item:hover {
+    background-color: rgb(180, 180, 180);
+}
+
+.menu-item {
+    display: flex;
+    gap: 7px;
+    height: 5vh;
+    font-weight: 500;
+    align-items: center;
+    padding-left: 1vw;
+    white-space: normal;
+}
+
+.menu-item div {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    word-wrap: break-word;
+    word-break: break-all; 
+}
+
+.menu-item.active {
+    background-color: #9b9b9b;
+    color: #333;
+}
+
+.btn-link {
+    color: black;
+    text-decoration: none;
+}
+
+/* Media Query for responsiveness */
+@media screen and (max-width: 768px) {
+    .Anb {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        background-color: white;
+        width: 92%;
+        height: 20vh;
+        top: -25vh;
+        left: 4vw;
+        border-radius: 7px;
+        box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5);
+        transition: top 0.3s ease;
+        padding-top: 4vh;
+    }
+
+    .Anb.open {
+        top: 0;
+        left: 4vw;
+        background-color: white;
+    }
+
+    .together {
+        flex: 1;
+        width: 100%;
+        /* background-color: aqua; */
+    }
+
+    .panel {
+        width: 80%;
+        padding: 0 1rem;
+    }
+
+    .panel div {
+        font-size: 0.8em;
+    }
+
+    .photoContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        /* gap: 2vh; */
+        /* margin: 5px; */
+    }
+
+    .photo {
+        height: 15vw;
+        width: 15vw;
+    }
+
+    .userDetails {
+        /* background-color: red; */
+        width: 20vw;
+    }
+
+    .userDetails div {
+        /* background-color : red; */
+        font-size: 0.8em;
+        word-wrap: break-word;
+
+    }
+
+    .separate2 {
+        width: 1px;
+        height: 90%;
+        margin: auto 1vw;
+        background-color: black;
+    }
+
+    .menu {
+        /* background-color: red; */
+        flex: 7;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        width : 100%;
+    }
+
+    .menu-item {
+        padding-left: 0.5rem;
+        flex: 1 1 50%;
+    }
+
+    .menu-item div:nth-child(2) {
+        font-size: 0.8em;
+        max-width: 50%;
+        word-wrap: break-word;
+        word-break: break-all;
+        white-space: normal;
+    }
+
+    .btn-link {
+        max-width: 50%;
+
+    }
+}
+
+@media screen and (max-width : 468px){
+    .menu-item div:nth-child(2) {
+        font-size: 0.5em;
+    }
+}

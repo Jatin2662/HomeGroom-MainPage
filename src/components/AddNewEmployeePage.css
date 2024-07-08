@@ -1,0 +1,67 @@
+
+
+.mainBox1{
+    height : 100%;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    flex-direction : column;
+}
+.mainBox1 div{
+    min-height : 30%;
+    max-height : 30%;
+}
+
+.form{
+    /* background-color : red; */
+    min-height : 70%;
+    max-height : 70%;
+    width : 50vw;
+}
+
+.status{
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    flex-direction : column;
+}
+
+form{
+    display : flex;
+    flex-direction : column;
+    gap : 7px;
+}
+
+.info{
+    display : flex;
+    flex-direction : column;
+    gap : 3px;
+}
+
+.fields{
+    border: 1px solid #d4d1d3;
+    border-radius: 7px;
+    height: 40px;
+    padding: 0 10px;
+}
+
+.btn-sub{
+    width : 50%;
+    margin : auto;
+    display : flex;
+}
+
+.btn-sub button{
+    flex-grow : 1;
+    /* border : none; */
+    cursor : pointer;
+    border-radius : 7px;
+    background : greenyellow;
+    height: 40px;
+    padding: 0 10px;
+    font-weight : 600;
+}
+
+/* h1, h2 {
+    font-size: inherit;
+  } */

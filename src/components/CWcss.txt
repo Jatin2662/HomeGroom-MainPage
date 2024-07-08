@@ -1,0 +1,63 @@
+
+.completed h1{
+    font-size : 1.5em;
+    text-align : center;
+}
+
+header{
+    padding-top : 5vh;
+    padding-bottom : 5vh;
+}
+
+.nav{
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    width : 90%;
+    margin : auto;
+    border-radius: 7px;
+    background-color : white;
+    /* box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5); */
+}
+
+.nav div{
+    /* background-color : red; */
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    height : 7vh;
+    width : 100%;
+    font-weight : 600;
+    font-size : 1.1em;
+}
+
+.separated{
+    width : 99%;
+    height : 2px;
+    background-color : black;
+    margin : 10px auto;
+}
+
+.done{
+    display : flex;
+    flex-direction : column;
+    gap : 10px;
+}
+
+.eachWork{
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    width : 90%;
+    margin : auto;
+    border-radius: 7px;
+    background-color : white;
+    padding : 3px;
+}
+.eachWork div{
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    /* height : 10vh; */
+    width : 100%;
+}

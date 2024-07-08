@@ -1,0 +1,76 @@
+
+
+.customers h1{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.customerBox{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+header {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    border-radius: 7px;
+    background-color: white;
+    /* box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5); */
+}
+
+.nav div {
+    /* background-color : red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    width: 100%;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.separated {
+    width: 99%;
+    height: 2px;
+    background-color: black;
+    margin: 10px auto;
+}
+
+
+.single-customer{
+    /* height : 5vh; */
+    /* font-size : 1.2em; */
+    padding: 7px;
+    width : 90%;
+    border-radius : 7px;
+    margin : auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: white;
+
+}
+
+.single-customer div, .heading div{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width : 100%;
+}
+
+.single-customer div{
+    word-wrap: break-word;
+    word-break: break-all;
+    white-space: normal;
+}
+

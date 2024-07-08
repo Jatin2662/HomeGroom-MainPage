@@ -1,0 +1,128 @@
+.completed h1 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+header {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    border-radius: 7px;
+    background-color: white;
+    /* box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5); */
+}
+
+.nav div {
+    /* background-color : red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    width: 100%;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.separated {
+    width: 99%;
+    height: 2px;
+    background-color: black;
+    margin: 10px auto;
+}
+
+.done {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.eachWork {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    border-radius: 7px;
+    background-color: white;
+    padding: 3px;
+}
+
+.eachWork div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height : 10vh; */
+    width: 100%;
+}
+
+.sta {
+    display: flex;
+    flex-direction: column;
+}
+
+.email-wrap {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    width: 100%;
+    display: block;
+}
+
+.checkbox-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload {
+    position: fixed;
+    right: 14px;
+    bottom: 14px;
+}
+
+.upload button {
+    background-color: rgb(0, 255, 217);
+    border-radius: 7px;
+    padding: 7px;
+    cursor: pointer;
+    max-width: 70px;
+}
+
+@media screen and (max-width : 486px){
+    .eachWork{
+        flex-direction: column;
+        gap : 14px;
+    }
+
+    .eachWork ul{
+        width: 100%;
+        list-style: none;
+        display: flex;
+        padding: 0;
+        margin: 0;
+        justify-content: space-between;
+    }
+}
+
+
+@media screen and (max-width: 403px) {
+    /* .nav div{
+        background-color : red;
+        display : flex;
+        justify-content : center;
+        align-items : center;
+        
+    } */
+
+
+    .completed h1 {
+        padding-top: 2vh;
+    }
+}

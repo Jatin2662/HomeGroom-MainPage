@@ -1,0 +1,82 @@
+.employeeDetails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: red; */
+}
+
+.employees {
+    height: 100%;
+    width: 100%;
+    /* background-color: rgb(234, 255, 0); */
+    padding-top: 3vh;
+
+}
+
+.employeesBox {
+    /* padding-top : 3vh; */
+    display : flex;
+    /* justify-content : center;
+    align-items : center; */
+    flex-direction : column;
+    gap : 1vh;
+    /* background-color: rgb(72, 255, 0); */
+    width : 100%;
+}
+
+.employeesBox h2{
+    text-align : center;
+}
+
+.single-employee {
+    height : 5vh;
+    font-size : 1.2em;
+    width : 90%;
+    border-radius : 7px;
+    margin : auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.single-employee div{
+    width : 100%;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+}
+
+
+.single-employee:hover{
+    background-color : rgb(170, 170, 170);
+}
+
+.addEmployee{
+    width : 50px;
+    height : 50px;
+    border-radius : 50%;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    position : fixed;
+    bottom : 10px;
+    right : 10px;
+    background-color : white;
+}
+
+
+
+
+/* yeh dala tha pehle @media main.single-employee {
+    
+    font-size : 1em;
+    font-weight : 600;
+    width : 90%;
+    border-radius : 7px;
+    margin : auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    flex-direction : column;
+} */ /* height : auto; */

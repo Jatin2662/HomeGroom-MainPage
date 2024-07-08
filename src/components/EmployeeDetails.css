@@ -1,0 +1,130 @@
+.employeeDetails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.employees {
+    height: 100%;
+    width: 100%;
+
+}
+
+.employeesBox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.empty {
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.zoom-color {
+    animation: zoom 3s ease-in-out infinite;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+        color: rgb(255, 174, 0);
+    }
+
+    25% {
+        color: rgb(0, 195, 255);
+    }
+
+    50%{
+        transform: scale(2);
+        color: rgb(255, 0, 234);
+    }
+
+    75%{
+        color: rgb(0, 195, 255);
+    }
+
+    100% {
+        transform: scale(1);
+        color: rgb(255, 174, 0);
+        /* color: rgb(200, 255, 0); */
+    }
+}
+
+.single-employee {
+    height: 5vh;
+    font-size: 1.2em;
+    width: 90%;
+    border-radius: 7px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.addEmployee {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+@media screen and (max-width : 560px) {
+
+    .employeesBox {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .single-employee:hover {
+        box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .single-employee {
+        height: auto;
+        width: 90%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .tl{
+        width : 100%;
+        text-align: left;
+    }
+
+    .single-employee div:nth-child(1) {
+        /* opacity: 0; */
+        display: none;
+    }
+
+    .single-employee div:nth-child(4) {
+        padding-left: 7px;
+        max-width: 100%;
+        word-wrap: break-word;
+    }
+
+    .single-employee div:nth-child(5) {
+        /* background-color : red; */
+        /* align-self: flex-end; */
+        position: absolute;
+        top: 2px;
+        right: 2px;
+    }
+}

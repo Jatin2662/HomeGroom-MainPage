@@ -1,0 +1,58 @@
+
+.orders-page h1{
+    margin-top : 40px;
+}
+
+.order-btns{
+    width : 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: red; */
+    /* border-bottom: 1px solid black; */
+}
+
+.order-btns div{
+    /* width : 100%; */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.o-btn-link{
+    color: black;
+    text-decoration: none;
+    flex: 1; /* Make each link take equal space */
+    display: flex;
+}
+
+.o-menu-item:hover {
+    background-color: rgb(205, 247, 255);
+}
+
+.o-menu-item {
+    display: flex;
+    height: 5vh;
+    font-weight: 500;
+    align-items: center;
+    white-space: normal;
+    border-bottom: 2px solid black;
+}
+
+.o-menu-item div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    word-wrap: break-word;
+    word-break: break-all; 
+}
+
+.o-menu-item.active {
+    /* background-color: #9b9b9b; */
+    color: #333;
+    border-left : 2px solid black;
+    border-top: 2px solid black;
+    border-right : 2px solid black;
+    border-bottom: none;
+}

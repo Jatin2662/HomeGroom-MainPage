@@ -1,0 +1,49 @@
+
+.mainBox{
+    height : 100vh;
+    /* background-color : rgb(245, 171, 171); */
+    /* position : relative; */
+    /* z-index : 10; */
+    display : grid;
+    grid-template-areas : "left right";
+    grid-template-columns : 20% 80%;
+}
+
+.left-side{
+    grid-area : left;
+    background-color : rgb(255, 196, 0);
+}
+
+.circle{
+    /* border-radius : 50%;
+    height : 50px;
+    width : 50px; */
+    /* background-color : rgb(255, 255, 255); */
+    position : fixed;
+    top : 4px;
+    left : 4px;
+    /* z-index: 30; */
+}
+
+.right-side{
+    grid-area : right;
+    background-color : rgb(68, 255, 0);
+
+}
+
+.right-side {
+    position: relative;
+    
+  }
+  
+  .right-side::after {
+    content: "Administrator3487@gmail.com";
+    opacity: 0.5;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%) rotate(-45deg);
+    font-size: 20px; 
+    color: rgba(0, 0, 0, 0.5); 
+    /* z-index: -1;  */
+  }

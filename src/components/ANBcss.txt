@@ -1,0 +1,114 @@
+
+
+.Anb{
+    width : 20vw;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    flex-direction : column;
+    position : fixed;
+    top : 5vh;
+    left : -20vw;
+    border-radius: 7px;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5);
+    transition: left 0.3s ease;
+    animation : changeBackground 7s infinite;
+    padding-top : 2vh;
+}
+
+@keyframes changeBackground {
+    0%{
+        background-color : white;
+        /* box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5); */
+    }
+    50%{
+        background-color : rgb(222, 222, 222);
+        /* box-shadow: -5px 0 10px rgba(147, 72, 72, 0.5); */
+    }
+    100%{
+        background-color : white;
+        /* box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5); */
+    }
+}
+
+.Anb.open{
+    left: 0;
+}
+
+.panel {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.photoContainer {
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3vh;
+    margin: 5px;
+}
+
+.photo {
+    border-radius: 50%;
+    height: 10vw;
+    width: 10vw;
+}
+
+
+.separate {
+    height: 1px;
+    width: 90%;
+    margin: auto;
+    background-color: black;
+}
+
+.userDetails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu{
+    width : 100%;
+    display : flex;
+    flex-direction : column;
+    /* background-color : red; */
+    margin : 10px auto;
+    gap : 3px;
+}
+
+.menu-item:hover{
+    background-color : rgb(180, 180, 180);
+}
+
+.menu-item{
+    display : flex;
+    gap : 7px;
+    height : 5vh;
+    font-weight : 500;
+    /* font-size : 1.2em; */
+    /* justify-content : center; */
+    align-items : center;
+    padding-left : 1vw;
+}
+
+.menu-item div {
+    display: flex; 
+    align-items: center; 
+}
+
+.menu-item.active {
+    background-color: #9b9b9b; 
+    color: #333; 
+  }
+
+.menu-item .btn-link{
+    /* color: white; */  /* looking good */
+    color : black;
+    text-decoration: none;
+}
