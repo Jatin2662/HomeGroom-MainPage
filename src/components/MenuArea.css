@@ -1,0 +1,49 @@
+
+.menu-area{
+    display : none;
+}
+
+.menu-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color : rgb(255, 255, 255);
+    border-radius: 7px;
+    width : 70%;
+    position : fixed;
+    left : -100%;
+    top : 10vh;
+    transition: left 0.3s ease;
+}
+
+.menu-area.open1{
+    left : 0;
+}
+
+.menu-area a{
+    text-decoration : none;
+    color : black;
+}
+
+.menu-area div{
+    width : 80%;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-area div:hover{
+    background-color : gray;
+}
+
+@media screen and (max-width : 514px){
+    .menu-area{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+}

@@ -1,0 +1,135 @@
+
+
+.css{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.CSS {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f8f8f8;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    box-sizing: border-box;
+    overflow-x: hidden; 
+}
+
+.CSS h1{
+    padding-left: 10%;
+}
+
+.feedback-message {
+    width : 90%;
+    margin : auto;
+    height: 20px;
+    font-size: 15px;
+    padding: 3px;
+    display: block;
+    
+}
+
+.feedback-message div{
+    width : 90%;
+    color : rgb(0, 115, 255);
+}
+
+.text-input {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-input textarea,
+.text-input input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.css-btn-div {
+    text-align: center;
+}
+
+.css-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.css-btn:hover {
+    background-color: #45a049;
+}
+
+.radio-input{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.radio{
+    width : 90%;
+}
+
+.single-radio{
+    width : fit-content;
+    /* border : 1px solid black; */
+}
+
+@media (max-width: 768px) {
+    .CSS {
+        width: 90%;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .css-btn {
+        width: 90%;
+        padding: 15px;
+    }
+}
+
+
+.feedback-choice {
+    width : fit-content;
+    text-align: center;
+    padding : 20px;
+    background-color: #f8f8f8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.feedback-choice p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.feedback-choice button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.feedback-choice button:hover {
+    background-color: #0056b3;
+}
+
+.feedback-choice button:focus {
+    outline: none;
+}

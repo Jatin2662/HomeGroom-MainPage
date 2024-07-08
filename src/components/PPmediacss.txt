@@ -1,0 +1,42 @@
+
+@media screen and (max-width : 1062px){
+    
+    .photo {
+        height: 10vw;
+        width: 10vw;
+    }
+
+    .userDetails {
+        /* background-color: red; */
+        width: 20vw;
+    }
+
+    .userDetails div:nth-child(2){
+        /* background-color: red; */
+        padding-left : 3px;
+    }
+}
+
+@media screen  and (max-width : 790px){
+    .profile {
+        right: -30vw;
+        width: 30vw;
+    }
+
+    .userDetails {
+        /* background-color: red; */
+        width: 30vw;
+    }
+}
+
+@media screen  and (max-width : 520px){
+    .profile {
+        right: -50vh;
+        width: 50vh;
+    }
+
+    .userDetails {
+        background-color: red;
+        width: 50vh;
+    }
+}

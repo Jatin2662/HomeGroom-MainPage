@@ -1,0 +1,105 @@
+.separate {
+    height: 1px;
+    width: 90%;
+    margin: auto;
+    background-color: black;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: blanchedalmond; */
+    border-radius: 7px;
+
+    position: fixed;
+    top: 10vh;
+    right: -20vw;
+    /* z-index: -10; */
+    width: 20vw;
+    animation : changeBackground 7s infinite;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease;
+
+    padding-top : 2vh;
+}
+
+@keyframes changeBackground {
+    0%{
+        background-color : white;
+        /* box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5); */
+    }
+    50%{
+        background-color : rgb(222, 222, 222);
+        /* box-shadow: -5px 0 10px rgba(147, 72, 72, 0.5); */
+    }
+    100%{
+        background-color : white;
+        /* box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5); */
+    }
+}
+
+.profile.open {
+    right: 0;
+    /* z-index: 10; */
+}
+
+.panel {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .panel div:nth-child(2){
+    border-radius : 50%;
+}
+
+.panel div:nth-child(2):hover{
+    background-color : rgb(180, 180, 180);
+} */
+
+.photoContainer {
+    /* height: auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3vh;
+    margin: 5px;
+}
+
+.photo {
+    border-radius: 50%;
+    height: 10vw;
+    width: 10vw;
+}
+
+.userDetails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu{
+    width : 100%;
+    display : flex;
+    flex-direction : column;
+    /* background-color : red; */
+    margin : 10px auto;
+}
+
+.menu-item:hover{
+    background-color : rgb(180, 180, 180);
+}
+
+.menu-item{
+    display : flex;
+    gap : 7px;
+    /* justify-content : center; */
+    align-items : center;
+    padding-left : 1vw;
+}
+
